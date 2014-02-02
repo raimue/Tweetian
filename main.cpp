@@ -62,7 +62,8 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     app->installTranslator(&translator);
 
     app->setApplicationName("Tweetian");
-    app->setOrganizationName("Tweetian");
+    // To match annoying harbour requirement
+    app->setOrganizationName("harbour-tweetian");
     app->setApplicationVersion(APP_VERSION);
     QScopedPointer<QQuickView> view(SailfishApp::createView());
     new TweetianIf(app.data(), view.data());

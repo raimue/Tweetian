@@ -2,16 +2,16 @@ TEMPLATE = app
 TARGET = harbour-tweetian
 
 # Application version
-VERSION = 1.8.3-3
+VERSION = 1.8.3-4
 DEFINES += APP_VERSION=\\\"$$VERSION\\\"
 
 # Qt Library
-QT += network location positioning svg
+QT += network svg
 
 # Qt Mobility Library
 CONFIG += mobility
 
-MOBILITY += feedback location gallery
+MOBILITY += feedback gallery
 
 HEADERS += \
     src/qmlutils.h \
